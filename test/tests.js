@@ -26,9 +26,7 @@ describe('cani', function(){
 
 	it('should call the api get', function(done){
             this.timeout(3400);
-            api.routes.get[0].handler({
-                body:{query:'donald trump'}
-            },{
+            api.routes.get[0].handler('req', {
                 json:function(tweets){
                     done(tweets.statuses.length?null:'no statuses returned from get route');
                 }

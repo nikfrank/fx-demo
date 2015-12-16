@@ -1,5 +1,4 @@
 var gulp = require('gulp'),
-mocha = require('gulp-istanbul'),
 mocha = require('gulp-mocha'),
 istanbul = require('gulp-istanbul');
 
@@ -22,7 +21,6 @@ gulp.task('test', ['pre-test'], function () {
           functions : 100
     } }));
 });
-
 
 gulp.task('default', function(){
     gulp.run('test');

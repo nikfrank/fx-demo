@@ -1,0 +1,25 @@
+{
+  "name": "fxd",
+  "version": "0.0.1",
+  "dependencies": {
+    "connect": "2.7.2",
+    "express": "3.4.x",
+    "q": "^1.4.1"
+  },
+  "engines": {
+    "node": ">4.0.0",
+    "npm": ">2.0.0"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "mocha": "mocha test/tests.js",
+    "start": "node static"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-mocha": "^2.2.0",
+    "gulp-nodemon": "^2.0.4",
+    "mocha": "1.18.2"
+  }
+}
